@@ -1,3 +1,15 @@
 body {
     background-color: lightgrey;
 }
+
+.to-do-container {
+    margin: 0 10px;
+}
+
+.add-item-btn {
+    padding: 5px;
+    background-color: lightseagreen;
+    font-size: 18px;
+    margin-left: 5px;
+    border-radius: 10px;
+}

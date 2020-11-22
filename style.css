@@ -13,3 +13,8 @@ body {
     margin-left: 5px;
     border-radius: 10px;
 }
+
+#to-do-list {
+    list-style-type: none;
+
+}

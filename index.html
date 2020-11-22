@@ -16,7 +16,7 @@
     
     <div class="list-placeholder">
         <ul id="to-do-list">    
-            <li>Test</li>
+
         </ul>
     </div>
 
@@ -24,6 +24,25 @@
         const list = document.getElementById("to-do-list");
         const button = document.querySelector(".add-item-btn");
         const input = document.getElementById("item");
+
+        button.onclick=function() {
+            const itemText = input.value;
+            console.log(itemText);
+            input.value="";
+            const listItem = document.createElement("li");
+            const checkBox = document.createElement("input");
+            const span = document.createElement("span");
+            checkBox.type="checkbox";
+            span.innerText=itemText;
+            listItem.appendChild(checkBox);
+            listItem.appendChild(span);
+            console.log(listItem)
+            list.appendChild(listItem);
+
+
+
+        }
+
     </script>
 </body>
 </html>

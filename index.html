@@ -32,12 +32,18 @@
             const listItem = document.createElement("li");
             const checkBox = document.createElement("input");
             const span = document.createElement("span");
+            const listButton = document.createElement("button");
             checkBox.type="checkbox";
             span.innerText=itemText;
+            listButton.innerText="delete";
             listItem.appendChild(checkBox);
             listItem.appendChild(span);
+            listItem.appendChild(listButton);
             console.log(listItem)
             list.appendChild(listItem);
+            listButton.onclick=function() {
+                list.removeChild(listItem);
+            }
 
 
 
